@@ -13,59 +13,77 @@
 
     <!-- calculator body -->
     <div class="border bg-cyan-300 p-4 mx-auto max-w-sm text-center ">
-        <input type="text"
-            class="w-full rounded-md focus:outline-blue-500 px-2 py-3 text-lg font-semibold outline-none focus:duration-700"
-            value="0">
+        <input id="display" type="text"
+            class="w-full rounded-md focus:outline-blue-500 px-2 py-3 text-lg font-semibold outline-none focus:duration-700">
 
         <!-- numberPad -->
         <div class="mt-5 grid gap-1 grid-cols-5">
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">7</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue(7)">7</button>
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">8</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue(8)">8</button>
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">9</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue(9)">9</button>
             <button
-                class="bg-orange-700 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">D</button>
+                class="bg-orange-700 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="">D</button>
             <button
-                class="bg-red-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">C</button>
+                class="bg-red-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="clearDisplay()">C</button>
         </div>
         <div class="mt-1 grid gap-1 grid-cols-5">
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">4</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue(4)">4</button>
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">5</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue(5)">5</button>
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">6</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue(6)">6</button>
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">-</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue('-')">-</button>
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">+</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue('+')">+</button>
         </div>
         <div class="mt-1 grid gap-1 grid-cols-5">
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">1</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue(1)">1</button>
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">2</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue(2)">2</button>
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">3</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue(3)">3</button>
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">*</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue('*')">*</button>
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">/</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue('/')">/</button>
         </div>
         <div class="mt-1 grid gap-1 grid-cols-5">
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">0</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue(0)">0</button>
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">00</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue('00')">00</button>
             <button
-                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">.</button>
+                class="bg-orange-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="NumberpadValue('.')">.</button>
             <button
-                class="col-span-2 bg-green-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300">=</button>
+                class="col-span-2 bg-green-600 px-4 py-1 font-bold text-white rounded-md border focus:border-blue-300 focus:duration-300"
+                onclick="solution()">=</button>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
