@@ -7,6 +7,15 @@ function NumberpadValue(Value) {
   Display.value = currentValue + newValue;
 }
 
+// delete a digit from last element
+function deleteDigit(){
+  if(Display.value){
+    const Value = Display.value.split("");
+    Value.pop();
+    Display.value = Value.join("");
+  }
+}
+
 // Clear the Display function
 function clearDisplay() {
   Display.value = "";
